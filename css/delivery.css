@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+
+section .active{
+  display: block;
+}
+
+section li strong{
+  line-height: 1.5;
+  font-size: 1.25rem;
+  display: block;
+  height: 30px;
+  overflow: hidden;
+}
+section li p{
+  display: inline-block;
+  line-height: 2;
+  font-size: 1.5rem;
+  background: url(../img/icon_price.png) no-repeat;
+  background-position-x: 0;
+  background-position-y: 50%;
+  padding-left: 1.5rem;
+  color: #c90a1f;
+}
+section li button{
+  display: block;
+  padding: 2.5px 26px;
+  font-size: 16px;
+  background: #fff;
+  border: 1px solid black;
+  border-radius: 16px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+section li button:hover{
+  background: #2c251e;
+  color: #fff;
+  transition: 0.5s;
+}
+section li .thumb:hover{
+  transform: scale(1.06);
+  transition: 0.5s;
+}
+
+.thumb{
+  width: 90%;
+  min-height: 129px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}

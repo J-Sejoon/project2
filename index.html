@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project2-KFC</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <link rel="manifest" href="manifest.json" />
+  <script defer src="js/main.js"></script>
+  <script>
+    if (typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('sw.js')
+    }
+  </script>
+</head>
+<body>
+  <div id="container">
+    <header>
+      <h1><span>치킨은 KFC</span></h1>
+      <div class="top_left">
+        <a href="index.html">
+          <h1>KFC</h1>
+        </a>
+      </div>
+      <div class="top_right">
+        <a href="#">
+          <span>장바구니</span>
+        </a>
+      </div>
+    </header>
+    <main>
+      <div class="banner_container swiper swiper-container">
+        <div class="banner_wrap swiper-wrapper">
+          <div class="banner_item swiper-slide"></div>
+          <div class="banner_item swiper-slide"></div>
+          <div class="banner_item swiper-slide"></div>
+          <div class="banner_item swiper-slide"></div>
+          <div class="banner_item swiper-slide"></div>  
+        </div>
+        <div class="swiper-pagination banner_pagination"></div>
+      </div>
+
+      <div id="order">
+        <ul class="order">
+          <li><a href="delivery.html"><img src="img/delivery_bike.png" alt=""><strong>딜리버리</strong><p>고민은 배달만 늦출뿐! 부릉부릉~</p></a></li>
+          <li><a href="#"><img src="img/Delivery_bell.png" alt=""><strong>징거벨 오더</strong><p>이제 줄 서지 마세요! 딩동~</p></a></li>
+        </ul>
+      </div>
+        
+        <div>
+          <ul class="sns">
+            <li><a href="#"><img src="img/youtube.png"><span>YOUTUBE</span></a></li>
+            <li><a href="#"><img src="img/facebook.png"><span>FACEBOOK</span></a></li>
+            <li><a href="#"><img src="img/insta.png"><span>INSTAGRAM</span></a></li>
+          </ul>
+        </div>
+
+        <div class="place">
+          <h2>매장찾기</h2>
+          <p>고객님 주변에 있는 KFC를 찾아보세요!</p>
+          <a href="#">매장찾기</a>
+        </div>      
+    </main>
+
+    <footer>
+        <ul>
+          <li><a href="index.html"><span>홈</span></a></li>
+          <li><a href="#"><span>쿠폰</span></a></li>
+          <li><a href="delivery.html"><span>딜리버리</span></a></li>
+          <li><a href="login.html"><span onclick="alert('로그인 이후 이용하실 수 있습니다')">마이페이지</span></a></li>
+        </ul>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>purchase</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/purchase.css">
+  <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+  <script defer src="js/purchase.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1><span>결제하기</span></h1>
+    <div class="top_left">
+      <a href="javascript:window.history.back()">
+        <img src="/img/arrow_left_white.svg" alt="">
+        <h1>KFC</h1>
+      </a>
+    </div>
+    <div class="top_right">
+      <a href="#">
+        <span>장바구니</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="pur_top">
+        <h1>결제 예정 메뉴</h1>
+        <div class="pur_info">
+          <h2>골드까르보버거</h2>
+          <img src="img/buger01.png" alt="">
+          <p class="pri">7,200</p><br>
+          <p>수량 : 1개</p>
+        </div>
+        <div class="pur_info2">
+          <p>담긴 상품 1개</p>
+          <p>합계 7,200</p>
+        </div>
+      </div>
+
+      <div class="pur_bottom">
+        <ul>
+          <li class="address_info">
+            <p>배송지 정보</p>
+          </li>
+          <div class="address">
+            <li>
+              <p>배달 받을 주소</p>
+              <input class="add" type="button" onclick="PostCodeSearch()" value="우편번호 찾기">
+              <input type="text" id="add">
+            </li>
+          </div>
+          <div class="phone">
+            <li>
+              <p>휴대폰</p>
+              <input type="text">
+              <input type="text">
+              <input type="text">
+            </li>
+          </div>
+          <div class="req">
+            <li>
+              <p>요청사향 입력</p>
+              <input type="text">
+            </li>
+          </div>
+          
+          <li>
+            <p>결제 수단</p>
+          </li>
+          <div class="payment">
+            <li>
+              <input type="radio" name="payment" id="select">
+              <label for="select">카드결제</label>
+              <input type="radio" name="payment" id="select2">
+              <label for="select2">휴대폰결제</label>
+            </li>
+          </div>
+          <li class="sum">
+            <p>총 결제 금액</p>
+            <p class="pri">7,200</p>
+          </li>
+        </ul>
+
+        <div class="btn_cp">
+          <button onclick ="history.back()" class="btn_c">취소</button>
+          <button class="btn_p">결제하기</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <ul>
+        <li><a href="index.html"><span>홈</span></a></li>
+        <li><a href="#"><span>쿠폰</span></a></li>
+        <li><a href="delivery.html"><span>딜리버리</span></a></li>
+        <li><a href="login.html"><span onclick="alert('로그인 이후 이용하실 수 있습니다')">마이페이지</span></a></li>
+      </ul>
+    </footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+.top_left h1{
+  font-size: 0;
+}
+.top_left img{
+  width: 40px;
+}
+
+section{
+  margin: 54px 0 52px;
+}
+
+.info{
+  width: 100%;
+  height: 576px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.info .cover .grade{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 417px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+}
+.grade span{
+  color: #457744;
+  font-weight: bold;
+}
+.grade img{
+  /* width: 160px; */
+  margin-bottom: 49px;
+}
+
+.info .cover ul{
+  display: flex;
+  justify-content: space-around;
+  height: 159px;
+  text-align: center;
+  align-items: center;
+}
+.info .cover li{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+.info .cover ul li a{
+  display: block;
+  height: 100%;
+  padding: 20px;
+}
+.info .cover ul img{
+  margin: 17px;
+}
+.info .cover ul span{
+  display:flex;
+  justify-content: center;
+}
+
+.sub{
+  height: 540px;
+  font-size: 18px;
+}
+.sub ul{
+  display: flex;
+  flex-direction: column;
+  
+}
+.sub ul li{
+  
+}
+.sub ul li:first-child{
+  border: none;
+}
+.sub ul li:last-child{
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+.sub ul li a{
+  display: block;
+  height: 60px;
+  padding: 18px;
+}
+.sub ul li a:after{
+  content: "";
+  float: right;
+  background: url(/img/arrow_right.svg) no-repeat;
+  width: 18px;
+  height: 100%;
+}
+
+section li:hover{
+  background: #ddd;
+  transition: 0.7s;
+}

@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+.top_left img{
+  width: 40px;
+}
+
+.login_container{
+  margin-top: 54px;
+  margin-bottom: 82px;
+}
+
+.login_container img{
+  border-radius: 12px;
+  width: 90%;
+  margin: 5%;
+}
+
+.idpw_wrap .idpw{
+  display: flex;
+  flex-direction:column;
+  margin-top: 50px;
+}
+.idpw input:focus{
+  outline: 1px solid #2c251e;
+}
+.idpw input{
+  display: block;
+  margin: 0 auto;
+  font-size: 16px;
+  height: 48px;
+  width: 60%;
+  margin-bottom: 15px;
+  padding:12px;
+  position: relative;
+  overflow: hidden;
+  color: #666;
+  border: 1px solid #ddd;
+}
+
+.idpw_wrap .agree{
+  position: relative;
+  left: 20%;
+  margin-bottom: 20px;
+  color: #777;
+}
+.idpw_wrap .agree input{
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 100px;
+  padding: 30px;
+  border: 1px solid #ddd;
+}
+
+
+.agree i{
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background:#e9e3dc url(../img/ico_chk.png);
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  z-index: -1;
+  transform: translateY(4px);
+}
+input[type="checkbox"]:checked + i{
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  transform: translateY(4px);
+  background:#666 url(../img/ico_chk.png);
+}
+
+
+.agree input{
+  opacity: 0;
+}
+.btn_login{
+  display: block;
+  width: 70%;
+  height: 50px;
+  border:1px solid black;
+  border-radius: 25px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 14px;
+  background: #2c251e;
+  color: #fff;
+}
+
+.register ul{
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+}
+.register ul li{
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  border-right: 1px solid #aaa;
+}
+.register ul li:last-child{
+  border: none;
+}
+.register ul li a{
+  width: 33.333%;
+  color: #777;
+}

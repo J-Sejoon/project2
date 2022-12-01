@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Set01</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/price.css">
+  <script defer src="js/amount.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+  <div id="container">
+    <header>
+      <h1><span>알찬신메뉴팩</span></h1>
+      <div class="top_left">
+        <a href="javascript:window.history.back()">
+          <img src="/img/arrow_left_white.svg" alt="">
+          <h1>KFC</h1>
+        </a>
+      </div>
+      <div class="top_right">
+        <a href="#">
+          <span>장바구니</span>
+        </a>
+      </div>
+    </header>
+  <div class="banner">
+    <h1>DELIVERY<br>MENU</h1>
+  </div>
+  
+  <div class="nav">
+    <ul>
+      <li><a href="delivery.html" class="btn_menu"><span>추천</span></a></li>
+      <li><a href="delivery.html" class="btn_chicken"><span>치킨</span></a></li>
+      <li><a href="delivery.html" class="btn_burger"><span>버거</span></a></li>
+      <li><a href="delivery.html" class="btn_drink"><span>음료</span></a></li>
+      <li><a href="delivery.html" class="btn_snack"><span>스낵</span></a></li>
+    </ul>
+  </div>
+
+  <section>
+    <div class="item">
+      <div class="item_photo">
+        <img src="img/set01.png" alt="">
+      </div>
+    </div>
+
+    <div class="food">
+      <div class="food_info">
+        <h1>알찬신메뉴팩</h1>
+        <p>신메뉴를 더욱 알차게 즐기는 방법</p>
+      </div>
+      <form name="form" class="price">
+        <h1>합계</h1>
+        <input class="sell_price" type=hidden name="sell_price" value="17900">
+        <input class="sum" type="text" name="sum" readonly>
+        
+        <div class="updown">
+          <input class="button" type="button" name="add" value="+">
+          <input class="amount" type="text" name="amount" value="1" max="" autocomplete="off">
+          <input class="button" type="button" name="minus" value="-">
+        </div>        
+      </form>
+
+      <button onclick = "location.href ='delivery.html'">목록가기</button>      
+    </div>
+  </section>
+</body>
+
+<footer>
+  <div>
+    <ul>
+      <li><a href="#">장바구니</a></li>
+      <li><a href="#">바로주문</a></li>
+    </ul>
+  </div>
+</footer>
+</html>

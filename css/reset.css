@@ -1,0 +1,222 @@
+@charset "UTF-8";
+
+* { 
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  max-width: 768px;
+  font-family: 'GmarketSansMedium';
+}
+html{
+  margin: auto;
+}
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+main, section, aside, article, footer, nav, menu, details,figure, figcaption {
+  display: block;
+}
+li { 
+  list-style: none !important;
+}
+a { 
+  text-decoration: none !important;
+  color:#000;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+}
+#container{
+  max-width: 768px;
+  min-width: 390px
+}
+
+header, footer{
+  z-index: 10 !important;
+}
+
+
+header{
+  position: fixed;
+  top: 0;
+  display: flex;
+  height: 54px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: #c90a1f;
+  color: #fff;
+}
+
+header h1{
+  order: 2;
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+}
+.top_left{
+  order:1;
+  transform: translateX(24px);
+}
+.top_right{
+  order: 3;
+  transform: translateX(-24px);
+}
+.top_right span{
+  display: block;
+  background: url(../img/icon_cart.svg);
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+  font-size: 0;
+  background-size: cover;
+}
+
+.top_left h1{
+  font-size: 0;
+}
+.top_left img{
+  width: 40px;
+}
+
+.banner{
+  width: 100%;
+  height: 169px;
+  margin-top: 54px;
+  background: url(../img/banner_delivery_pattern.png);
+  background-size: cover;
+  background-color: #292929;
+}
+.banner h1{
+  font-size: 36px;
+  text-align: start;
+  color: #fff;
+  transform: translate(28px, 28px);
+}
+
+footer{
+  height: 52px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+footer ul{
+  display: flex;
+  justify-content: space-around;
+  background: #333;
+  height: 52px;
+}
+footer ul li{
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+}
+footer ul li a{
+  display: block;
+  height: 100%;
+}
+footer ul li a span{
+  display: inline-block;
+  font-size: 12px;
+  background-size: 160px auto;
+  background-repeat: no-repeat;
+  line-height: 1rem;
+  margin-top: 0.3em;
+  color: #fff;
+}
+footer ul li:first-of-type span::before{
+  display: block;
+  content: "";
+  background: url(../img/icon_home.svg);
+  width: 28px;
+  background-size: cover;
+  height: 28px;
+}
+footer ul li:nth-child(2) span::before{
+  display: block;
+  content: "";
+  background: url(../img/icon_coupon.svg);
+  width: 28px;
+  background-size: cover;
+  height: 28px;
+}
+footer ul li:nth-child(3) span::before{
+  display: block;
+  content: "";
+  background: url(../img/icon_bike.svg);
+  width: 28px;
+  background-size: cover;
+  height: 28px;
+  margin: 0 auto;  
+}
+footer ul li:nth-child(4) span::before{
+  display: block;
+  content: "";
+  background: url(../img/icon_my.svg);
+  width: 28px;
+  background-size: cover;
+  height: 28px;
+  margin: 0 auto;
+}
+
+section{
+  margin-top: 50px;
+}
+section li{
+  width: 50%;
+  float: left;
+  height: 320px;
+  text-align: center;
+  display: none;
+  margin-bottom: 80px;
+}
+
+.nav{
+  width: 100%;
+  height: 69px;
+}
+.nav ul{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 5%;
+}
+.nav li a{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: 3.75rem;
+  width: 3.75rem;
+  background-position-x: center;
+}
+.nav li:first-of-type a{
+  background: url(../img/new.png) no-repeat;
+  background-position-x: center;
+}
+.nav li:nth-child(2) a{
+  background: url(../img/chicken.png) no-repeat;
+  background-position-x: center;
+}
+.nav li:nth-child(3) a{
+  background: url(../img/burger.png) no-repeat;
+  background-position-x: center;
+}
+.nav li:nth-child(4) a{
+  background: url(../img/drink.png) no-repeat;
+  background-position-x: center;
+}
+.nav li:nth-child(5) a{
+  background: url(../img/snack.png) no-repeat;
+  background-position-x: center;
+}
+.nav li a span{
+  transform: translateY(20px);
+}
+.nav li:hover a, .nav li a.active{
+  background-position-y: -4.1rem;
+  color: #c90a1f;
+}

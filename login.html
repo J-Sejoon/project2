@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/reset.css">
+</head>
+<body>
+  <header>
+    <h1><span>치킨은 KFC</span></h1>
+    <div class="top_left">
+      <a href="javascript:window.history.back()">
+        <img src="/img/arrow_left_white.svg" alt="">
+      </a>
+    </div>
+    <div class="top_right">
+      <a href="#">
+        <span>장바구니</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <div class="login_container">
+      <img src="img/login.png" alt="">
+
+      <div class="idpw_wrap">
+        <div class="idpw">
+          <input type="text" placeholder="아이디 입력">
+          <input type="password" placeholder="비밀번호 입력">
+        </div>
+        <div class="agree">
+          <input type="checkbox">
+          <i></i>
+          <span>아이디 저장</span>
+        </div>        
+      </div>
+
+      <a href="mypage.html" class="btn_login">로그인</a>
+
+      <div class="register">
+        <ul>
+          <li><a href="#">통합 회원가입</a></li>
+          <li><a href="#">아이디 찾기</a></li>
+          <li><a href="#">비밀번호 찾기</a></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <ul>
+      <li><a href="index.html"><span>홈</span></a></li>
+      <li><a href="#"><span>쿠폰</span></a></li>
+      <li><a href="delivery.html"><span>딜리버리</span></a></li>
+      <li><a href="login.html"><span onclick="alert('로그인 이후 이용하실 수 있습니다')">마이페이지</span></a></li>
+    </ul>
+  </footer>
+</body>
+</html>
