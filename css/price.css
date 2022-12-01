@@ -2,6 +2,15 @@
 
 section{
   margin-bottom: 52px;
+  margin-top: 50px;
+}
+section li{
+  width: 50%;
+  float: left;
+  height: 320px;
+  text-align: center;
+  display: none;
+  margin-bottom: 80px;
 }
 .item{
   background: url(../img/bg_detail.jpg);
