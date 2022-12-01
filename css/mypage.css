@@ -86,7 +86,7 @@ section{
 .sub ul li a:after{
   content: "";
   float: right;
-  background: url(/img/arrow_right.svg) no-repeat;
+  background: url(../img/arrow_right.svg) no-repeat;
   width: 18px;
   height: 100%;
 }
