@@ -16,17 +16,17 @@
 	"screenshots": [
 		{
 			"src": "images/screenshot1.png",
-			"sizes": "390x1041",
+			"sizes": "355x734",
 			"type": "image/png"
 		},
 		{
 			"src": "images/screenshot2.png",
-			"sizes": "390x1687",
+			"sizes": "355x744",
 			"type": "image/png"
 		},
 		{
 			"src": "images/screenshot3.png",
-			"sizes": "390x1110",
+			"sizes": "357x738",
 			"type": "image/png"
 		}
 	],
