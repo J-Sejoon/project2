@@ -8,8 +8,8 @@
 	"lang": "ko",
 	"display": "standalone",
 	"orientation": "any",
-	"scope": "/https://j-sejoon.github.io/project2/",
-	"start_url": "/https://j-sejoon.github.io/project2/",
+	"scope": "https://j-sejoon.github.io/project2/",
+	"start_url": "https://j-sejoon.github.io/project2/",
 	"gcm_sender_id": "",
 	"gcm_user_visible_only": true,
 	"categories": [],
@@ -32,19 +32,19 @@
 	],
 	"icons": [
 		{
-			"src": "/images/maskable_icon_x512.png",
+			"src": "images/maskable_icon_x512.png",
 			"sizes": "512x512",
 			"type": "image/png",
 			"purpose": "any"
 		},
 		{
-			"src": "/images/maskable_icon_x128.png",
+			"src": "images/maskable_icon_x128.png",
 			"sizes": "128x128",
 			"type": "image/png",
 			"purpose": "maskable"
 		},
 		{
-			"src": "/images/maskable_icon_x48.png",
+			"src": "images/maskable_icon_x48.png",
 			"sizes": "48x48",
 			"type": "image/png",
 			"purpose": "maskable"
